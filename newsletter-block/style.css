@@ -1,0 +1,9 @@
+@media (-webkit-video-playable-inline) {
+*[playable] video { display: block !important; }
+*[playable] video ~ img { display: none !important; }
+}
+@keyframes playable-reveal {
+ 0% { opacity: 0;filter: blur(64px); }
+ 50% { filter: blur(0px); }
+ 100% { opacity: 1; }
+}
